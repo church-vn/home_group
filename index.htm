@@ -9,10 +9,11 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="attendance-record.fld/filelist.xml">
+<link rel=File-List href="index.fld/filelist.xml">
 <title>Attendance Record Template</title>
 <![if !supportTabStrip]>
-<link id="shLink" href="attendance-record.fld/sheet001.htm">
+<link id="shLink" href="index.fld/sheet001.htm">
+<link id="shLink" href="index.fld/sheet002.htm">
 
 <link id="shLink">
 
@@ -20,10 +21,11 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <!--
  var g_iIEVer=0;
  
- var c_lTabs=1;
+ var c_lTabs=2;
 
  var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "AttendanceRecord";
+ c_rgszSh[0] = "Осень 2024";
+ c_rgszSh[1] = "Зима 2024-2025";
 
 
  var c_rgszClr=new Array(8);
@@ -42,7 +44,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
+  "<frame src=\""+document.all.item("shLink")[1].href+"\" name=\"frSheet\" noresize>"+
   "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
   "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
@@ -304,15 +306,20 @@ function fnSetActiveSheet(iSh)
  <x:ExcelWorkbook>
   <x:ExcelWorksheets>
    <x:ExcelWorksheet>
-    <x:Name>AttendanceRecord</x:Name>
-    <x:WorksheetSource HRef="attendance-record.fld/sheet001.htm"/>
+    <x:Name>Осень 2024</x:Name>
+    <x:WorksheetSource HRef="index.fld/sheet001.htm"/>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Зима 2024-2025</x:Name>
+    <x:WorksheetSource HRef="index.fld/sheet002.htm"/>
    </x:ExcelWorksheet>
   </x:ExcelWorksheets>
-  <x:Stylesheet HRef="attendance-record.fld/stylesheet.css"/>
+  <x:Stylesheet HRef="index.fld/stylesheet.css"/>
   <x:WindowHeight>16820</x:WindowHeight>
   <x:WindowWidth>27040</x:WindowWidth>
   <x:WindowTopX>1760</x:WindowTopX>
   <x:WindowTopY>460</x:WindowTopY>
+  <x:ActiveSheet>1</x:ActiveSheet>
   <x:ProtectStructure>False</x:ProtectStructure>
   <x:ProtectWindows>False</x:ProtectWindows>
  </x:ExcelWorkbook>
@@ -320,8 +327,8 @@ function fnSetActiveSheet(iSh)
 </head>
 
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="attendance-record.fld/sheet001.htm" name="frSheet">
- <frame src="attendance-record.fld/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
+ <frame src="index.fld/sheet002.htm" name="frSheet">
+ <frame src="index.fld/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
  <noframes>
   <body>
    <p>This page uses frames, but your browser doesn't support them.</p>
